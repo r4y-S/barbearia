@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --cor-do-fundo: #f0f0f0;
+  --cor-do-titulo: #000;
+  --color-fundo:#031519;
+  --cor-font:#010303;
+  --font-title: poppins;
+  --text-body: Roboto+Laje;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: var(--cor-do-fundo);
+  margin: 0;
+  padding: 0;
+  
+}
+
+ol, ul, li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--cor-font);
+}
+
+
+header.logo{
+  
+  margin: 2rem;
+  padding: 4rem;
+  display: flex;
+}
+
+header.logo img{
+  width: auto;
+}
+
+section.section_list{
+  background-color: #a9a9a9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+  height: 30vh;
+  width: 100%;
+  margin-right: 4rem;
+  font-family: Poppins, sans-serif;
+}
+
+section.section_list nav.nav_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 31.25rem;
+  margin: 4rem;
+  font-size: 1.5rem;
+}
+  
+nav.nav_menu ul li a:hover{
+  color: var(--cor-do-fundo);
+}
+
+nav.nav_menu ul li a::after{
+  content: '';
+  width: 0%;
+  background: var(--cor-do-fundo);
+  transition: 3s;
+}
+
+nav.nav_menu ul li a::hover:after{
+  width: 100%;
+}
+
+section.container{
+  display: flex;
+  margin: 4rem;
+  padding: 2rem 0;
+}
+
+section.container div.title{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2rem;
+}
+
+section.container div.title img{
+  width: 25rem;
+  height: 28.130rem;
+  margin-left: 6.25rem;
+  border-radius: 5px;
+}
+
+section.container div.box{
+  position: absolute;
+  width: 26rem;
+  height: 28.130rem;
+  background: #a9a9a9;
+  z-index: -1;
+  border-radius: 5px;
+  margin-left: 2.187rem;
+  
+}
+
+section.container div.title h2{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: end;
+  margin-top: -300px;
+  margin-right: 1.25rem;
+  text-align: center;
+  font-size: 2.125rem;
+}
+
+section.container div.title p{
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  font-family: 'Roboto+Lage', sans-serif;
+  margin-right: 4rem;
+  margin-top: 1.2rem;
+  color:#2c2c2c;
+}
+
+section.container div.title a{
+  display: flex;
+  justify-content: center;
+  margin-left: 47.875rem;
+  margin-top: 1.62rem;
+}
+
+section.container div.title a button.botao{
+  padding: 1.25rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-fundo);
+  color: var(--cor-do-fundo);
+}
+
+section.container div.title a button:hover{
+  background: #2c2c2c;
+}
+
+.divider_1{
+  height: 1px;
+  background-image: linear-gradient(to right, #2c2c2c, #e9e9e9);
+}
+
+.divider_2{
+  height: 1px;
+  background-image: linear-gradient(to left, #2c2c2c, #e9e9e9);
+}
+
+section.product{
+  margin: 4rem;
+  padding: 2rem;
+}
+
+section.product div.product_item h2{
+  text-align: center;
+  padding: 4rem;
+  font-size: 2.125rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.product div.services a{
+  display: inline-block;
+  margin-left: 7.5rem;
+  
+}
+
+.services a{
+  position: relative;
+  display: inline-block;
+  margin: 2rem 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.services_list a:after{
+  content: "";
+  position: absolute;
+  opacity: 1;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.services a:hover{
+  transform: scale(1.25, 1.25);
+}
+
+#cabelo{
+  width: 20.625rem;
+  height: 25rem;
+  
+  border: solid #031519 5px;
+  border-radius: 5px;
+}
+
+#barba{
+  width: 20.625rem;
+  height: 25rem;
+  border: solid #031519 5px;
+  border-radius: 5px;
+
+}
+
+#cabbarba{
+  width: 20.625rem;
+  height: 25rem;
+  border: solid #031519 5px;
+  border-radius: 5px;
+
+
+}
+
+.text{
+  text-align: center;
+  margin: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+section.about{
+ 
+  
+  margin: 4rem;
+  padding: 2rem;
+}
+
+section.about div.about_title h2{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.125rem;
+  margin: 2rem;
+}
+
+section.about div.quem_somos{
+  position: absolute;
+  width: 26rem;
+  height: 28.130rem;
+  left: 63%;
+  background: #a9a9a9;
+  z-index: -1;
+  border-radius: 5px;
+  margin-left: .937rem;
+  margin: 9rem 4rem;
+}
+
+section.about div.quem_somos_about img{
+  position: relative;
+  width: 26rem;
+  height: 28.130rem;
+  left: 60%;
+  top: 1.875rem;
+  background: #a9a9a9;
+  z-index: 0;
+  border-radius: 5px;
+  margin: 9rem 4rem;
+}
+
+section.about div.quem_somos_about h3{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: -400px;
+  margin-left: 5.937rem;
+  padding: 2rem 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+section.about div.quem_somos_about p{
+  display: flex;
+  font-size: 1rem;
+  margin: 0 0 6rem 6rem;
+  font-family: 'Roboto+Laje', sans-serif;
+}
+
+section.formcontact{
+  margin: 4rem 4rem 0 0;
+  padding: 2rem 2rem 0 2rem; 
+  height: 1400px;
+}
+
+section.formcontact div.contact_img img{
+  display: flex;
+  width: 24.375rem;
+  height: 30rem;
+  margin-left: 8.25rem;
+  border-radius: 5px;
+  
+}
+
+section.formcontact div.contact_form h2{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.125rem;
+  margin: 2rem;
+}
+
+section.formcontact div.contact_form h3{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-left: 41.25rem;
+  text-align: right;
+}
+
+section.formcontact form.form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+
+  position: relative;
+  bottom: 32.5rem;
+  right: 5rem;
+  margin: 2rem;
+  
+}
+
+#nome{
+  width: 36.25rem;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#email{
+  width: 36.25rem;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  border: none;
+  border-radius: 5px;
+
+}
+
+#assunto{
+  width: 36.25rem;
+  padding: 1rem;
+  margin: 1rem 0 0;
+  border: none;
+  border-radius: 5px;
+
+}
+
+#mensagem{
+  width: 36.25rem;
+  padding: 1rem;
+  margin: 1rem 0 1rem;
+  border: none;
+  border-radius: 5px;
+
+}
+
+section.formcontact form.form button{
+  
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-fundo);
+    color: var(--cor-do-fundo);
+    margin-left: 6.25rem;
+  
+  
+  }
+  section.formcontact form.form button:hover{
+    background: #2c2c2c;
+  }
+
+  section.footer{
+    padding: 8rem;
+    background: #a9a9a9;
+  }
+
+  section.footer div.redes_sociais p{
+    text-align: center;
+    font-family: 'Roboto+Laje', sans-serif;
+    font-size: 1.2rem;
+    padding: .3rem;
+  }
+
+  section.footer div.redes_sociais p span{
+    color: #2c2c2c;
+  }
+
+  section.footer div.redes_sociais ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    padding: .5rem;
+  }
+
+  section.footer div.redes_sociais ul a{
+    padding: .5rem;
+  }
+
+  section.footer div.img_logo{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  section.footer div.botao_voltar a{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+
+  @media (max-width: 414px) {
+    body{
+      overflow-x: hidden;
+    }
+
+
+
+    header.logo{
+      display: flex;
+      align-content: center;
+      
+    }
+
+    header.logo img{
+      width: 150px;
+      margin-left: 40px;
+    }
+
+    section.section_list{
+      width: 100%;
+      height: 350px;
+      
+    }
+
+    section.section_list nav.nav_menu ul{
+     position: relative;
+     top: 120px;
+     right: 410px;
+     width: 100%;
+     max-width: 414px;
+     font-size: 1rem;
+    }
+
+    section.container{
+      display: block;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    section.container div.box{
+      position: absolute;
+      width: 20rem;
+      height: 25rem;
+      margin: 16px;
+    }
+
+    section.container div.title img{
+      width: 20rem;
+      height: 25rem;
+      margin: 16px;
+    }
+
+   
+    section.container div.title h2{
+      position: absolute;
+      margin-top: 300px;
+      text-align: center;
+    }
+
+    section.container div.title p{
+      position: relative;
+      top: 110px;
+      text-align: center;
+    }
+
+    section.container div.title a{
+      width: 400px;
+    }
+
+
+    section.container div.title a button.botao{
+     position: relative;
+     right: 800px;
+     top: 70px;
+     margin: 32px;
+    }
+
+    section.container div.title a button:hover{
+      background: #2c2c2c;
+    }
+
+/*serviços*/
+
+section.product{
+  margin: 10px;
+  padding: 10px;
+  max-width: 414px;
+}
+
+
+
+section.product div.services a {
+  position: relative;
+  margin-left: 64px;
+}
+
+#cabelo{
+  right: 600px;
+  width: 16rem;
+  height: 20rem;
+}
+
+#barba{
+  right: 600px;
+  width: 16rem;
+  height: 20rem;
+}
+
+#cabbarba{
+  right: 600px;
+  width: 16rem;
+  height: 20rem;
+}
+
+/*quem somos*/
+
+section.about{
+ 
+  margin: 10px;
+  padding: 10px;
+}
+
+section.about div.quem_somos{
+  position: absolute;
+  width: 20rem;
+  height: 25rem;
+  margin: 100px;
+  margin-left: -200px;
+}
+
+section.about div.quem_somos_about img{
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  left: -5%;
+  margin: 100px 20px;
+}
+
+section.about div.quem_somos_about h3{
+  display: block;
+  margin-top: -190px;
+  margin: 10px;
+  padding: 0;
+  
+}
+
+section.about div.quem_somos_about p{
+  margin: 10px;
+}
+
+/*contato*/
+
+section.formcontact{
+  margin: 20px 20px 0 0;
+  padding: 10px 10px 0 10px; 
+}
+
+section.formcontact div.contact_img img{
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  bottom: 100px;
+  right: 90px;
+}
+
+section.formcontact div.contact_form h3{
+  position: relative;
+  right: 600px;
+  top: 500px;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+section.formcontact form.form{
+  display: block;
+  margin-top: 600px;
+}
+
+#nome{
+  width: 20rem;
+  margin-left: 90px
+}
+
+#email{
+  width: 20rem;
+  margin-left: 90px
+}
+
+#assunto{
+  width: 20rem;
+  margin-left: 90px
+}
+
+#mensagem{
+  width: 20rem;
+  margin-left: 90px
+}
+
+section.formcontact form.form button{
+  padding: 12px;
+  margin-left: 90px;
+}
+
+
+section.footer div.botao_voltar a{
+  margin-right: 60px;
+}
+
+
+  }
